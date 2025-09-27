@@ -22,4 +22,4 @@ We use the CHAR_LENGTH() function to measure how many characters are in content.
 Any tweet with more than 15 characters gets selected.  
 
 ## 🔑 Key Takeaway
-String functions like LENGTH() let you filter rows based on text size.
+String functions like CHAR_LENGTH() let you filter rows based on text size.

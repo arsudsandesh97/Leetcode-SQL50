@@ -1,8 +1,9 @@
 # Day 8 – Customer Who Visited but Did Not Make Transactions
 
 ## 📖 Problem
-Find customers who visited but never made a transaction.
+Write a solution to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits.
 
+Return the result table sorted in any order.
 ## 🗂️ Schema
 Table: Visits  
 - visit_id INT  

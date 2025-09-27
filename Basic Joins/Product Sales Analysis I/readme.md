@@ -19,13 +19,13 @@ Table: Product
 
 ## 💡 SQL Solution
 ```
-SELECT p.product_id, 
-p.product_name, 
-MIN(year) AS first_year
+SELECT
+p.product_name,
+s.year,
+s.price
 FROM Sales s
-JOIN Product p
-  ON s.product_id = p.product_id
-GROUP BY p.product_id, p.product_name;
+INNER JOIN Product p
+ON s.product_id = p.product_id
 ```
 
 ## 🧠 Explanation

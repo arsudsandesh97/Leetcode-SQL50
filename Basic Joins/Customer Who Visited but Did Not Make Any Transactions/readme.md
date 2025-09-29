@@ -15,7 +15,7 @@ Table: Transactions
 - amount INT  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT customer_id, 
 COUNT(*) AS count_no_trans
 FROM Visits v

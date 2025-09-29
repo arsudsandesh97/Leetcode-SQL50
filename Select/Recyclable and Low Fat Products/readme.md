@@ -11,7 +11,7 @@ Table: Products
 - recyclable ENUM('Y','N')  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT product_id
 FROM Products
 WHERE low_fats = 'Y'
@@ -25,3 +25,4 @@ If either one fails, the row is excluded.
 
 ## 🔑 Key Takeaway
 AND ensures multiple conditions must all be satisfied before a row passes.
+

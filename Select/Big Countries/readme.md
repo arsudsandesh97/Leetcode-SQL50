@@ -14,7 +14,7 @@ Table: World
 - gdp BIGINT  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT 
 name, 
 population, 

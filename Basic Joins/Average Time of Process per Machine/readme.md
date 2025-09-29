@@ -17,7 +17,7 @@ Table: Sales
 - timestamp float   
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT
 t1.machine_id,
 ROUND(AVG(t2.timestamp - t1.timestamp), 3) as processing_time

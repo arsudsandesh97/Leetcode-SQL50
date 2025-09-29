@@ -13,7 +13,7 @@ Table: Views
 - view_date DATE  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT DISTINCT author_id AS id
 FROM Views
 WHERE author_id = viewer_id

@@ -16,7 +16,7 @@ Table: Customer
 - referee_id INT  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT name
 FROM Customer
 WHERE

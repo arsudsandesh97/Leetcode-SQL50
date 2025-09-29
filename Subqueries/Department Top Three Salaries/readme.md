@@ -18,16 +18,17 @@ Table: Department
 
 ## 💡 SQL Solution
 ```sql
-SELECT 
-  d.name AS Department,
-  e.name AS Employee,
-  e.salary AS Salary
+SELECT
+d.name AS Department,
+e.name AS Employee,
+e.salary AS Salary
 FROM Employee e
-JOIN Department d ON e.departmentId = d.id
+LEFT JOIN Department d
+ON e.departmentId = d.id
 WHERE (
-  SELECT COUNT(DISTINCT e2.salary)
-  FROM Employee e2
-  WHERE e2.departmentId = e.departmentId
+    SELECT COUNT(DISTINCT e2.salary)
+    FROM Employee e2
+    WHERE e2.departmentId = e.departmentId
     AND e2.salary > e.salary
 ) < 3
 ORDER BY d.name, e.salary DESC, e.name;
@@ -36,7 +37,7 @@ ORDER BY d.name, e.salary DESC, e.name;
 ## 🧠 Explanation
 - For each employee, a correlated subquery counts how many distinct salaries are higher in their department.  
 - If fewer than 3 are higher, the employee is top-3.  
-- JOIN with Department adds department names.  
+- LEFT JOIN with Department adds department names.  
 - ORDER BY organizes results nicely.  
 
 ## 🔑 Key Takeaway

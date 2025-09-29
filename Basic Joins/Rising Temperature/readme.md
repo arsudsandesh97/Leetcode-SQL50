@@ -10,7 +10,7 @@ Table: Weather
 - temperature INT  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT t1.id as id
 FROM Weather t1
 JOIN Weather t2

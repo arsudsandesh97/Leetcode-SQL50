@@ -15,7 +15,7 @@ Table: EmployeeUNI
 - unique_id INT  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT
 t2.unique_id,
 t1.name

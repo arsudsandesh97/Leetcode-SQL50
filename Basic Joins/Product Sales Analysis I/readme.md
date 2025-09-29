@@ -18,7 +18,7 @@ Table: Product
 - product_name VARCHAR  
 
 ## 💡 SQL Solution
-```
+```sql
 SELECT
 p.product_name,
 s.year,
